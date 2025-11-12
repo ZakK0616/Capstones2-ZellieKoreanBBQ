@@ -15,7 +15,8 @@ package com.pluralsight;
                 System.out.println(Colors.YELLOW + "    \\_/\\_/ \\___|_|\\___\\___/|_| |_| |_|\\___|  " + Colors.RESET);
                 System.out.println("Hello and thank you for picking Zellie Korean BBQ!!!");
                 System.out.println("Now what can I help you with??");
-            boolean running = true;
+
+                boolean running = true;
 
             while (running) {
                 System.out.println(Colors.YELLOW + "1) To MAKE ORDER: " + Colors.RESET);
@@ -25,11 +26,15 @@ package com.pluralsight;
 
                 switch (choice) {
                     case ("1"):
+                        OrderScreen.startOrder();
                         break;
 
                     case ("0"):
                         running = false;
                         System.out.println(Colors.RED + "Thank you please come back soon! \uD83D\uDE34 \uD83D\uDE34 \uD83D\uDE34");
+
+                    default:
+                        System.out.println(Colors.RED + "⚠\uFE0F⚠\uFE0F ERROR please pick the prompts above!! ⚠\uFE0F⚠\uFE0F");
                 }
             }
         }
