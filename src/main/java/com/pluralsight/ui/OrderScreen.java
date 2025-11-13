@@ -1,6 +1,6 @@
 package com.pluralsight.ui;
 
-import com.pluralsight.models.ItemScreen;
+import com.pluralsight.models.Items;
 import com.pluralsight.util.Colors;
 
 import java.util.Scanner;
@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 public class OrderScreen {
     private static Scanner scanner = new Scanner(System.in);
-    private static ArrayList <ItemScreen> orderItems = new ArrayList<>();
+    private static ArrayList <Items> orderItems = new ArrayList<>();
 
     public static void startOrder(){
         System.out.println(Colors.GREEN + "\uD83C\uDF56♨\uFE0F===========Welcome to Zellie's menu what can we get you!===========\uD83C\uDF56♨\uFE0F" + Colors.RESET);
@@ -18,8 +18,8 @@ public class OrderScreen {
             System.out.println(Colors.CYAN + "2) Sides");
             System.out.println(Colors.CYAN + "3) Drinks");
             System.out.println(Colors.CYAN + "4) Rice");
-            System.out.println(Colors.CYAN + "5) View Order");
-            System.out.println(Colors.CYAN + "0) Checkout");
+            System.out.println(Colors.CYAN + "5) Checkout");
+            System.out.println(Colors.CYAN + "0) Cancel Order");
             System.out.print(Colors.PURPLE + "Enter your choice: " + Colors.RESET);
             String choice = scanner.nextLine();
             switch (choice) {
@@ -27,12 +27,21 @@ public class OrderScreen {
                     MeatMenu.show(orderItems);
                     break;
                 case ("2"):
+                    SideMenu.show(orderItems);
                     break;
                 case ("3"):
+                    DrinksMenu.show(orderItems);
                     break;
                 case ("4"):
+                    RiceMenu.show(orderItems);
                     break;
                 case ("5"):
+                    if (orderItems.isEmpty()) {
+                        System.out.println("Add at least one item please.");
+                    }
+                    else {
+                        CheckoutScreen.process(orderItems);
+                    }
                     break;
                 case ("0"):
 

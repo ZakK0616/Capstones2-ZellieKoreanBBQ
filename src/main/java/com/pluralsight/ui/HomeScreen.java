@@ -23,7 +23,7 @@ package com.pluralsight.ui;
             while (running) {
                 System.out.println(Colors.YELLOW + "1) To MAKE ORDER: " + Colors.RESET);
                 System.out.println(Colors.RED + "0) To CANCEL ORDER: " + Colors.RESET);
-                System.out.println(Colors.PURPLE + "Enter your choice: " + Colors.RESET);
+                System.out.print(Colors.PURPLE + "Enter your choice: " + Colors.RESET);
                 String choice = scanner.nextLine();
 
                 switch (choice) {

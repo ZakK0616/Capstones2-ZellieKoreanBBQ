@@ -1,11 +1,11 @@
 package com.pluralsight.models;
 
-public class ItemScreen {
+public class Items {
     private String name;
     private String category;
     private double price;
 
-    public ItemScreen(String name, String category, double price) {
+    public Items(String name, String category, double price) {
         this.name = name;
         this.category = category;
         this.price = price;

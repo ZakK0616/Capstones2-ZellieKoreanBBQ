@@ -1,11 +1,11 @@
 package com.pluralsight.ui;
-import com.pluralsight.models.ItemScreen;
+import com.pluralsight.models.Items;
 
 import java.util.Scanner;
 import java.util.ArrayList;
 public class RiceMenu {
     private static Scanner scanner = new Scanner(System.in);
-    public static void show(ArrayList<ItemScreen> orderItems) {
+    public static void show(ArrayList<Items> orderItems) {
         boolean choosing = true;
 
         while (choosing) {
@@ -17,7 +17,7 @@ public class RiceMenu {
 
             switch (choice) {
                 case "1":
-                    orderItems.add(new ItemScreen("Rice", "Side", 1.99));
+                    orderItems.add(new Items("Rice", "Side", 1.99));
                     System.out.println("Added Rice. ");
                     break;
                 case "2":

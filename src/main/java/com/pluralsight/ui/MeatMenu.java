@@ -1,5 +1,5 @@
 package com.pluralsight.ui;
-import com.pluralsight.models.ItemScreen;
+import com.pluralsight.models.Items;
 import com.pluralsight.util.Colors;
 
 import java.util.ArrayList;
@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class MeatMenu {
     private static Scanner scanner = new Scanner(System.in);
-    public static void show(ArrayList<ItemScreen> orderItems) {
+    public static void show(ArrayList<Items> orderItems) {
         boolean choosing = true;
 
         while (choosing){
@@ -21,15 +21,15 @@ public class MeatMenu {
 
             switch (choice){
                 case "1":
-                orderItems.add(new ItemScreen("Bulgogi", "Meat", 12.99));
+                orderItems.add(new Items("Bulgogi", "Meat", 12.99));
                     System.out.println(Colors.BLUE + "Added Bulgogi" + Colors.RESET);
                 break;
                 case "2":
-                    orderItems.add(new ItemScreen("Pork Belly", "Meat", 10.99));
+                    orderItems.add(new Items("Pork Belly", "Meat", 10.99));
                     System.out.println(Colors.BLUE + "Added Pork Belly" + Colors.RESET);
                     break;
                 case "3":
-                    orderItems.add(new ItemScreen("Spicy Chicken", "Meat", 11.99));
+                    orderItems.add(new Items("Spicy Chicken", "Meat", 11.99));
                     System.out.println(Colors.BLUE + "Added Spicy Chicken" + Colors.RESET);
                     break;
                 case "0":
