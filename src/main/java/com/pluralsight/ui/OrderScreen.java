@@ -1,11 +1,14 @@
-package com.pluralsight;
+package com.pluralsight.ui;
+
+import com.pluralsight.models.ItemScreen;
+import com.pluralsight.util.Colors;
 
 import java.util.Scanner;
 import java.util.ArrayList;
 
 public class OrderScreen {
     private static Scanner scanner = new Scanner(System.in);
-    private ArrayList <ItemScreen> orderItems = new ArrayList<>();
+    private static ArrayList <ItemScreen> orderItems = new ArrayList<>();
 
     public static void startOrder(){
         System.out.println(Colors.GREEN + "\uD83C\uDF56♨\uFE0F===========Welcome to Zellie's menu what can we get you!===========\uD83C\uDF56♨\uFE0F" + Colors.RESET);
@@ -21,6 +24,7 @@ public class OrderScreen {
             String choice = scanner.nextLine();
             switch (choice) {
                 case ("1"):
+                    MeatMenu.show(orderItems);
                     break;
                 case ("2"):
                     break;
@@ -31,7 +35,7 @@ public class OrderScreen {
                 case ("5"):
                     break;
                 case ("0"):
-                    
+
 
 
 

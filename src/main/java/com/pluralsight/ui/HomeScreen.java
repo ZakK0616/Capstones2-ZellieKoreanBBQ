@@ -1,5 +1,7 @@
-package com.pluralsight;
+package com.pluralsight.ui;
 
+
+    import com.pluralsight.util.Colors;
 
     import java.util.Scanner;
 
