@@ -67,5 +67,9 @@ Screenshots
 
 My code that I made that was interesting
 ===============================================================================================================================================================================================================================================================================
+🗑️ RemoveItem Utility
+===============================================================================================================================================================================================================================================================================
+
+The RemoveItem class is a custom utility added to the project to allow users to remove items from their current order. This class provides a simple, interactive menu to display all items in the order, let the user choose one to remove, and update the order list in real time.
 <img width="1165" height="657" alt="Desktop Screenshot 2025 11 13 - 12 10 24 35" src="https://github.com/user-attachments/assets/922637ab-5d6c-42ed-bdf1-3d8e7159190f" />
 
