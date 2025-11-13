@@ -2,6 +2,7 @@ package com.pluralsight.ui;
 
 import com.pluralsight.models.Items;
 import com.pluralsight.util.Colors;
+import com.pluralsight.util.RemoveItemScreen;
 
 import java.util.Scanner;
 import java.util.ArrayList;
@@ -14,12 +15,13 @@ public class OrderScreen {
         System.out.println(Colors.GREEN + "\uD83C\uDF56♨\uFE0F===========Welcome to Zellie's menu what can we get you!===========\uD83C\uDF56♨\uFE0F" + Colors.RESET);
         boolean ordering = true;
         while (ordering) {
-            System.out.println(Colors.CYAN + "1) Meats");
+            System.out.println(Colors.CYAN + "1) ItemsScreen");
             System.out.println(Colors.CYAN + "2) Sides");
             System.out.println(Colors.CYAN + "3) Drinks");
             System.out.println(Colors.CYAN + "4) Rice");
             System.out.println(Colors.CYAN + "5) Checkout");
-            System.out.println(Colors.CYAN + "0) Cancel Order");
+            System.out.println(Colors.CYAN + "6) Remove an Item");
+            System.out.println(Colors.CYAN + "0) Cancel back to Home screen");
             System.out.print(Colors.PURPLE + "Enter your choice: " + Colors.RESET);
             String choice = scanner.nextLine();
             switch (choice) {
@@ -43,7 +45,15 @@ public class OrderScreen {
                         CheckoutScreen.process(orderItems);
                     }
                     break;
+                case ("6"):
+                    RemoveItemScreen.show(orderItems);
+                    break;
                 case ("0"):
+                    orderItems.clear();
+                    System.out.println("Items in your cart is now clear back to home screen thank you have a great day!");
+                    HomeScreen.main(null);
+                    ordering = false;
+                    break;
 
 
 
