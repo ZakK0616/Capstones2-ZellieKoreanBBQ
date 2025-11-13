@@ -61,6 +61,13 @@ Screenshots
 ===============================================================================================================================================================================================================================================================================
 <img width="1163" height="658" alt="image" src="https://github.com/user-attachments/assets/76ca6d1c-dac0-4bba-b05d-0de6b75954cc" />
 <img width="1165" height="657" alt="image" src="https://github.com/user-attachments/assets/7d30e838-6861-449e-bdd6-509411ce42f8" />
+<img width="1165" height="567" alt="Desktop Screenshot 2025 11 13 - 12 17 17 08" src="https://github.com/user-attachments/assets/82f77fe0-aefc-4f8b-8dcb-2aa44316ee8d" />
+<img width="1165" height="567" alt="Desktop Screenshot 2025 11 13 - 12 17 39 10" src="https://github.com/user-attachments/assets/668b96e2-bb15-4799-8b2a-c4c114d79fae" />
+<img width="1165" height="567" alt="Desktop Screenshot 2025 11 13 - 12 17 59 52" src="https://github.com/user-attachments/assets/b65cde2d-754c-431e-bad8-790f4e549aa9" />
+
+
+
+
 
 
 
