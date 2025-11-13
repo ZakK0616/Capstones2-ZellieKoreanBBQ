@@ -65,9 +65,12 @@ public class Items {
 
     @Override
     public String toString() {
-        return name + " (" + category + ") - $" + String.format("%.2f", price);
+        String result = name;
+        if (!size.isEmpty()) result += " (" + size + ")";
+        if (!special.isEmpty()) result += " [" + special + "]";
+        result += " - $" + String.format("%.2f", price);
+        return result;
     }
-
 
     }
 

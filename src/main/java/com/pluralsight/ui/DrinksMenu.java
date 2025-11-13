@@ -17,26 +17,49 @@ public class DrinksMenu {
             System.out.println("0) Done choosing drinks");
             System.out.println("Choice: ");
             String choice = scanner.nextLine();
+            String drinkName = "";
+
+            if (choice.equals("0")) {
+                choosing = false;
+                continue;
+            }
 
             switch (choice) {
-                case "1":
-                    orderItems.add(new Items("Milkis", "Drink",2.99));
-                    System.out.println(Colors.BLUE + "Added Milkis" + Colors.RESET);
-                    break;
-                case "2":
-                    orderItems.add(new Items("Soda", "Drink",1.99));
-                    System.out.println(Colors.BLUE + "Added Soda" + Colors.RESET);
-                    break;
-                case "3":
-                    orderItems.add(new Items("Iced Tea", "Drink",2.49));
-                    System.out.println(Colors.BLUE + "Added Iced Tea" + Colors.RESET);
-                    break;
-                case "0":
-                    choosing = false;
-                    break;
-                default:
-                    System.out.println("Invalid Option.");
+                case "1" -> drinkName = "Milkis";
+                case "2" -> drinkName = "Soda";
+                case "3" -> drinkName = "Iced Tea";
+                default -> {
+                    System.out.println(Colors.RED + "Invalid option." + Colors.RESET);
+                    continue;
+                }
             }
+
+
+            System.out.println(Colors.YELLOW + "Select size for " + drinkName + ":" + Colors.RESET);
+            System.out.println("1) Small - $1.99");
+            System.out.println("2) Medium - $2.49");
+            System.out.println("3) Large - $2.99");
+            System.out.print(Colors.PURPLE + "Enter your choice: " + Colors.RESET);
+            String sizeChoice = scanner.nextLine();
+
+            double price = switch (sizeChoice) {
+                case "1" -> 1.99;
+                case "2" -> 2.49;
+                case "3" -> 2.99;
+                default -> 2.49;
+            };
+            String size = switch (sizeChoice) {
+                case "1" -> "Small";
+                case "2" -> "Medium";
+                case "3" -> "Large";
+                default -> "Medium";
+            };
+
+
+            Items drinkItem = new Items(drinkName, "Drink", price, size, "");
+            orderItems.add(drinkItem);
+
+            System.out.println(Colors.BLUE + "Added " + drinkName + " (" + size + ") - $" + String.format("%.2f", price) + Colors.RESET);
 
         }
     }

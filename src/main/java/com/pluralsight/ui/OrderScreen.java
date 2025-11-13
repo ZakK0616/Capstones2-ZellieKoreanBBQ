@@ -24,7 +24,7 @@ public class OrderScreen {
             String choice = scanner.nextLine();
             switch (choice) {
                 case ("1"):
-                    MeatMenu.show(orderItems);
+                    ItemsScreen.show(orderItems);
                     break;
                 case ("2"):
                     SideMenu.show(orderItems);
