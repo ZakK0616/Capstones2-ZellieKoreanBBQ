@@ -60,4 +60,12 @@ Order validation ensures minimum 1 item added before checkout
 Screenshots
 ===============================================================================================================================================================================================================================================================================
 <img width="1163" height="658" alt="image" src="https://github.com/user-attachments/assets/76ca6d1c-dac0-4bba-b05d-0de6b75954cc" />
+<img width="1165" height="657" alt="image" src="https://github.com/user-attachments/assets/7d30e838-6861-449e-bdd6-509411ce42f8" />
+
+
+
+
+My code that I made that was interesting
+===============================================================================================================================================================================================================================================================================
+<img width="1165" height="657" alt="Desktop Screenshot 2025 11 13 - 12 10 24 35" src="https://github.com/user-attachments/assets/922637ab-5d6c-42ed-bdf1-3d8e7159190f" />
 
