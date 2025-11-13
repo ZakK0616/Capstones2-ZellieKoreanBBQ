@@ -19,6 +19,23 @@ public class OrderScreen {
             System.out.println(Colors.CYAN + "0) Checkout");
             System.out.print(Colors.PURPLE + "Enter your choice: " + Colors.RESET);
             String choice = scanner.nextLine();
+            switch (choice) {
+                case ("1"):
+                    break;
+                case ("2"):
+                    break;
+                case ("3"):
+                    break;
+                case ("4"):
+                    break;
+                case ("5"):
+                    break;
+                case ("0"):
+                    
+
+
+
+            }
         }
 
     }

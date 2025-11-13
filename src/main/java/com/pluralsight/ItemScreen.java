@@ -34,4 +34,8 @@ public class ItemScreen {
     public void setPrice(double price) {
         this.price = price;
     }
+    @Override
+    public String toString(){
+        return name + " (" + category + ") - $" + String.format("%.2f", price);
+    }
 }
