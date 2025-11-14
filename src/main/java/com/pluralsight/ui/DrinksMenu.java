@@ -10,12 +10,12 @@ public class DrinksMenu {
         boolean choosing = true;
 
         while (choosing) {
-            System.out.println("\nSelect a drink: ");
-            System.out.println("1) Milkis - $2.99");
-            System.out.println("2) Soda - $1.99");
-            System.out.println("3) Iced Tea- $2.49");
-            System.out.println("0) Done choosing drinks");
-            System.out.println("Choice: ");
+            System.out.println( "\nSelect a drink: " + Colors.RESET);
+            System.out.println(Colors.CYAN + "1) Milkis - $2.99" + Colors.RESET);
+            System.out.println(Colors.CYAN + "2) Soda - $1.99" + Colors.RESET);
+            System.out.println(Colors.CYAN + "3) Iced Tea- $2.49" + Colors.RESET);
+            System.out.println(Colors.CYAN + "0) Done choosing drinks" + Colors.RESET);
+            System.out.println(Colors.PURPLE + "Choice: " + Colors.RESET);
             String choice = scanner.nextLine();
             String drinkName = "";
 
@@ -29,16 +29,16 @@ public class DrinksMenu {
                 case "2" -> drinkName = "Soda";
                 case "3" -> drinkName = "Iced Tea";
                 default -> {
-                    System.out.println(Colors.RED + "Invalid option." + Colors.RESET);
+                    System.out.println(Colors.RED + "⚠\uFE0F⚠\uFE0FInvalid option.⚠\uFE0F⚠\uFE0F" + Colors.RESET);
                     continue;
                 }
             }
 
 
             System.out.println(Colors.YELLOW + "Select size for " + drinkName + ":" + Colors.RESET);
-            System.out.println("1) Small - $1.99");
-            System.out.println("2) Medium - $2.49");
-            System.out.println("3) Large - $2.99");
+            System.out.println(Colors.CYAN + "1) Small - $1.99" + Colors.RESET);
+            System.out.println(Colors.CYAN + "2) Medium - $2.49" + Colors.RESET);
+            System.out.println(Colors.CYAN + "3) Large - $2.99" + Colors.RESET);
             System.out.print(Colors.PURPLE + "Enter your choice: " + Colors.RESET);
             String sizeChoice = scanner.nextLine();
 

@@ -2,7 +2,7 @@ package com.pluralsight.ui;
 
 import com.pluralsight.models.Items;
 import com.pluralsight.util.Colors;
-import com.pluralsight.util.RemoveItemScreen;
+import com.pluralsight.util.RemoveItem;
 
 import java.util.Scanner;
 import java.util.ArrayList;
@@ -39,18 +39,18 @@ public class OrderScreen {
                     break;
                 case ("5"):
                     if (orderItems.isEmpty()) {
-                        System.out.println("Add at least one item please.");
+                        System.out.println(Colors.RED + "⚠\uFE0F⚠\uFE0FAdd at least one item please.⚠\uFE0F⚠\uFE0F" + Colors.RESET);
                     }
                     else {
                         CheckoutScreen.process(orderItems);
                     }
                     break;
                 case ("6"):
-                    RemoveItemScreen.show(orderItems);
+                    RemoveItem.show(orderItems);
                     break;
                 case ("0"):
                     orderItems.clear();
-                    System.out.println("Items in your cart is now clear back to home screen thank you have a great day!");
+                    System.out.println(Colors.PURPLE + "Items in your cart is now clear back to home screen thank you have a great day!" + Colors.RESET);
                     HomeScreen.main(null);
                     ordering = false;
                     break;

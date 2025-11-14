@@ -10,13 +10,13 @@ public class SideMenu {
     public static void show(ArrayList<Items> orderItems) {
         boolean choosing = true;
         while (choosing) {
-            System.out.println("\nSelect a side:");
-            System.out.println("1) Kimchi - 4.99");
-            System.out.println("2) Seaweed Salad - 3.99");
-            System.out.println("3) Bean Sprouts - 3.49");
-            System.out.println("4) Cucumber Salad - 2.99");
-            System.out.println("0) Done choosing sides");
-            System.out.println("Choice: ");
+            System.out.println(Colors.YELLOW + "\nSelect a side:" + Colors.RESET);
+            System.out.println(Colors.CYAN + "1) Kimchi - 4.99" + Colors.RESET);
+            System.out.println(Colors.CYAN + "2) Seaweed Salad - 3.99" + Colors.RESET);
+            System.out.println(Colors.CYAN + "3) Bean Sprouts - 3.49" + Colors.RESET);
+            System.out.println(Colors.CYAN + "4) Cucumber Salad - 2.99" + Colors.RESET);
+            System.out.println(Colors.CYAN + "0) Done choosing sides" + Colors.RESET);
+            System.out.println(Colors.PURPLE + "Choice: " + Colors.RESET);
             String choice = scanner.nextLine();
 
             switch (choice) {
@@ -40,7 +40,7 @@ public class SideMenu {
                     choosing = false;
                     break;
                 default:
-                    System.out.println("Invalid option.");
+                    System.out.println(Colors.RED + "⚠\uFE0F⚠\uFE0FInvalid option.⚠\uFE0F⚠\uFE0F"+ Colors.RESET);
             }
         }
     }

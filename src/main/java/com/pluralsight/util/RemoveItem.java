@@ -5,7 +5,7 @@ import com.pluralsight.models.Items;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class RemoveItemScreen {private static Scanner scanner = new Scanner(System.in);
+public class RemoveItem {private static Scanner scanner = new Scanner(System.in);
 
     public static void show(ArrayList<Items> orderItems) {
         if(orderItems.isEmpty()) {
